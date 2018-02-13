@@ -1,7 +1,10 @@
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
-
+function cuadrado() {
+  var num = document.getElementById("n1");
+  num.value = num.value*num.value;
+}
 function inverse() {
   var num = document.getElementById("n1");
   num.value = 1/num.value;
@@ -11,7 +14,8 @@ function inverse() {
 <body>
   Number:
   <input type="text" id="n1"><p>
-
+  <button onclick="cuadrado()"> x*x </button>
   <button onclick="inverse()"> 1/x </button>
 </body>
 </html>
+
